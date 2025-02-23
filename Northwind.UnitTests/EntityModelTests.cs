@@ -1,3 +1,4 @@
+using Northwind.DataContext;
 using Northwind.EntityModels;
 namespace Northwind.UnitTests
 {

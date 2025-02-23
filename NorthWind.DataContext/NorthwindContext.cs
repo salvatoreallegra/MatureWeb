@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Northwind.EntityModels;
 using NorthWind.DataContext;
 
-namespace Northwind.EntityModels;
+namespace Northwind.DataContext;
 
 public partial class NorthwindContext : DbContext
 {

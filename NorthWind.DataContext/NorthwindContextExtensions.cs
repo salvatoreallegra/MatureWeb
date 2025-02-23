@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore; // To use the UseSqlServer method.
 using Microsoft.Extensions.DependencyInjection;
 using NorthWind.DataContext; // To use IServiceCollection.
 
-namespace Northwind.EntityModels;
+namespace Northwind.DataContext;
 
 public static class NorthwindContextExtensions
 {
