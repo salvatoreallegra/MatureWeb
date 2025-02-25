@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-Northwind.MVC-e5cc1dfb-da1a-442f-ac31-fc29c6659186</UserSecretsId>
+  </PropertyGroup>
+
+	<ItemGroup Label="To simplify use of WriteLine.">
+		<Using Include="System.Console" Static="true" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Hybrid" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MatureWeb.ServiceDefaults\MatureWeb.ServiceDefaults.csproj" />
+		<ProjectReference Include="..\Northwind.DataContext\Northwind.DataContext.csproj" />
+		<ProjectReference Include="..\Northwind.Repositories\Northwind.Repositories.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="wwwroot\images\" />
+	</ItemGroup>
+
+</Project>
